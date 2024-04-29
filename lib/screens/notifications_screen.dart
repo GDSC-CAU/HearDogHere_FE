@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'notification_list.dart';
+import '../notification/notification_list.dart';
 
 class Notifications extends StatefulWidget {
   const Notifications({super.key});

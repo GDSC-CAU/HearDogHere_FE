@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'sign_in_screen.dart';
-import 'sign_up/sign_up_screen.dart';
+import 'package:space_dog/screens/sign_up_screens/sign_up_screen.dart';
 import 'package:starsview/starsview.dart';
 
 class Start extends StatefulWidget {

@@ -3,8 +3,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 
-import '../home_screen.dart';
-import '../loading_screen.dart';
+import 'package:space_dog/screens/home_screen.dart';
+import 'package:space_dog/screens/loading_screen.dart';
 
 class EnterHomeLatLng extends StatefulWidget {
   const EnterHomeLatLng({Key? key});

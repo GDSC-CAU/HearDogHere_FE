@@ -7,10 +7,10 @@ import 'package:space_dog/streams/sound_stream.dart';
 import 'dart:math' as math show sin, pi, sqrt;
 import 'package:starsview/starsview.dart';
 
-import 'find_dog_screen.dart';
-import 'firestore_manager.dart';
-import 'notification/local_notification.dart';
-import 'notification/notifications_page.dart';
+import 'package:space_dog/screens/find_dog_screen.dart';
+import 'package:space_dog/firestore_manager.dart';
+import 'package:space_dog/notification/local_notification.dart';
+import 'package:space_dog/screens/notifications_screen.dart';
 import 'settings_screen.dart';
 
 class LocationProvider with ChangeNotifier {}

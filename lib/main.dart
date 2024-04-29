@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:space_dog/sign_in_screen.dart';
-import 'package:space_dog/splash_screen.dart';
-import 'package:space_dog/home_screen.dart';
-import 'package:space_dog/start_screen.dart';
+import 'package:space_dog/screens/sign_in_screen.dart';
+import 'package:space_dog/screens/splash_screen.dart';
+import 'package:space_dog/screens/home_screen.dart';
+import 'package:space_dog/screens/start_screen.dart';
 import 'notification/notification_list.dart';
-import 'sign_up/enter_dog_name_screen.dart';
+import 'screens/sign_up_screens/enter_dog_name_screen.dart';
 import 'package:provider/provider.dart';
 
 import 'package:firebase_core/firebase_core.dart';
@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
             useMaterial3: true,
           ),
-          home: HomePage(),
+          home: SplashScreen(),
           routes: {
             '/splash': (context) => const SplashScreen(),
             '/signin': (context) => const SignIn(),
