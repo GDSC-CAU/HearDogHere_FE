@@ -16,15 +16,15 @@ List<List<String>> description = [
     'assets/images/description/hello.png'
   ],
   [
-    'We\'ll help you to raise dogs in space',
+    'We\'ll help you to raise dogs in such conditions',
     'assets/images/description/astronaut_and_dog.png'
   ],
   [
     'We\'ll let you know when your dog barks or breaks something',
-    'assets/images/description/robot.png'
+    'assets/images/dog_state/dog_bark.png'
   ],
   [
-    'We\'ll warn you when your dog escapes',
+    'We\'ll alert you when your dog escapes',
     'assets/images/description/escape.png'
   ]
 ];
@@ -57,7 +57,7 @@ class _StartState extends State<Start> {
               SizedBox(height: 30),
               Container(
                 // 카드 슬라이더
-                height: MediaQuery.of(context).size.width * 0.85,
+                height: MediaQuery.of(context).size.height * 0.5,
                 child: PageView.builder(
                     controller: controller,
                     itemCount: 4,
@@ -72,7 +72,7 @@ class _StartState extends State<Start> {
                           Container(
                             //padding: const EdgeInsets.fromLTRB(20, 15, 15, 15),
                             margin: const EdgeInsets.symmetric(
-                                horizontal: 40, vertical: 5),
+                                horizontal: 30, vertical: 5),
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(15),
                                 color: const Color(0xFF6D71D2).withOpacity(0.4),
@@ -149,7 +149,7 @@ class _StartState extends State<Start> {
                   // sign-in button
                   Container(
                     height: 55,
-                    width: 160, // 로그인 버튼 너비
+                    width: 170, // 로그인 버튼 너비
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10), // 그림자 모서리 둥글게
                       boxShadow: [
@@ -209,7 +209,7 @@ class _StartState extends State<Start> {
                   //  sign-Up button
                   Container(
                     height: 55,
-                    width: 150,
+                    width: 170,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       boxShadow: [

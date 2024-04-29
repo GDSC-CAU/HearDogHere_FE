@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'home_screen.dart';
+import 'loading_screen.dart';
 
 class SignIn extends StatelessWidget {
   const SignIn({super.key});
@@ -166,10 +167,13 @@ class _SignInFormState extends State<SignInForm> {
                                     _formKey.currentState!.reset();
                                     FocusScope.of(context).unfocus();
                                     setLogin();
-                                    Navigator.push(
-                                      context,
+                                    Navigator.of(context).pushReplacement(
                                       MaterialPageRoute(
-                                        builder: (context) => HomePage(),
+                                        builder: (context) =>
+                                            LoadingWithNextPage(
+                                          nextPage: HomePage(),
+                                          duration: 2,
+                                        ),
                                       ),
                                     );
                                   } else {

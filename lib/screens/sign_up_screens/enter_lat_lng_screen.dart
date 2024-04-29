@@ -200,7 +200,7 @@ class _EnterHomeLatLngState extends State<EnterHomeLatLng> {
                                 style: TextStyle(
                                     color: Colors.white), // 입력 텍스트 색상을 하얀색으로 설정
                                 decoration: InputDecoration(
-                                  hintText: "min long",
+                                  hintText: "max long",
                                   hintStyle: TextStyle(
                                     color: Colors.white, // 힌트 텍스트 색상 변경
                                     fontFamily: "silkscreen",

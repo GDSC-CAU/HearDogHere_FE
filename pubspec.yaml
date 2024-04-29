@@ -80,7 +80,6 @@ flutter:
     - assets/images/earth.png
     - assets/images/description/hello.png
     - assets/images/description/astronaut_and_dog.png
-    - assets/images/description/robot.png
     - assets/images/description/escape.png
     - assets/images/dog_state/dog_floating.png
     - assets/images/dog_state/dog_bark.png
@@ -122,3 +121,8 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+flutter_icons:
+  ios: true
+  android: "launcher_icon"
+  image_path: "assets/images/app_icon.png"

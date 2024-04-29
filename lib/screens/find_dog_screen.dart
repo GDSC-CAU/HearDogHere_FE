@@ -47,8 +47,8 @@ class _FindDogState extends State<FindDog> {
           Align(
             alignment: Alignment.center,
             child: Container(
-              width: 50,
-              height: 50,
+              width: 80,
+              height: 80,
               child: Image.asset("assets/images/map_marker.png"),
             ),
           ),

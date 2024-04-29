@@ -20,13 +20,13 @@ class _SplashScreenState extends State<SplashScreen>
     super.initState();
 
     _controller = AnimationController(
-      duration: const Duration(seconds: 2),
+      duration: const Duration(seconds: 1),
       vsync: this,
     );
 
     _titleAnimation = Tween<Offset>(
       begin: Offset.zero,
-      end: const Offset(0, -5.1), // 텍스트 위로 이동
+      end: const Offset(0, -5.15), // 텍스트 위로 이동
     ).animate(_controller);
 
     Timer(Duration(seconds: 2), () {
